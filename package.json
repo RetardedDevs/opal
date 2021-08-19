@@ -1,0 +1,25 @@
+{
+  "name": "opal",
+  "version": "1.0.0",
+  "description": "Programming language",
+  "main": "./bin/opal.js",
+  "repository": "https://github.com/RetardedDevs/opal.git",
+  "author": "RetardedDevs",
+  "license": "GNU-GPLv3",
+  "private": false,
+  "scripts": {
+    "start": "node .",
+    "build": "rimraf build && tsc",
+    "dev": "tsc && node .",
+    "del": "rimraf build"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.6.2",
+    "@types/prompt-sync": "^4.1.1",
+    "rimraf": "^3.0.2"
+  }
+}
