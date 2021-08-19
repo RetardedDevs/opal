@@ -1,5 +1,5 @@
 import BaseError from "./BaseError.js";
-import Position from "../classes/Position.js";
+import Position from "../core/Position.js";
 
 export default class IllegalCharacterError extends BaseError {
     constructor(public message: string, protected start: Position, protected end: Position) {

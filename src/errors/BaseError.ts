@@ -1,4 +1,4 @@
-import Position from '../classes/Position';
+import Position from '../core/Position';
 import chalk from 'chalk'
 
 export default class BaseError { 

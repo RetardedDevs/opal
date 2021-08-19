@@ -1,4 +1,5 @@
-import Lexer from './classes/Lexer'
+import Lexer from './core/Lexer'
+import Parser from './core/parser/Parser';
 
 export default (file, tokens) => {
 
@@ -9,6 +10,8 @@ export default (file, tokens) => {
 
     if(result.error) return result.errorMessage.toString();
 
-    return result.tokens
+    const parser = new Parser(result.tokens);
+    const ast = parser.parse();
 
+    console.log(ast)
 }
