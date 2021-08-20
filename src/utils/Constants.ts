@@ -16,7 +16,7 @@ export enum OPERATORS {
     "+" = "PLUS",
     "-" = "MINUS",
     "/" = "DIV",
-    "*" = "MUL",
+    "*" = "MULT",
     "^" = "POWER"
 }
 
@@ -24,19 +24,6 @@ export enum KEYWORD {
     'DEF' = 'def',
     'FUNC' = 'func'
 }
-
-export const FACTOR_OPS: string[] = [TOKEN_TYPES.INT, TOKEN_TYPES.FLOAT]
-
-export enum EXPR_OPS {
-    "PLUS",
-    "MINUS"
-}
-
-export enum TERM_OPS {
-    "MULTIPLY",
-    "DIVIDE"
-}
-
 
 export const KEYWORDS: string[] = [
     KEYWORD.DEF,

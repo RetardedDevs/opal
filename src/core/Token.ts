@@ -1,7 +1,8 @@
+import { TOKEN_TYPES } from "../utils/Constants";
 import Position from "./Position";
 
 export default class Token {
-    constructor(public type: string, public value?: any, public start?: Position, public end?: Position) {
+    constructor(public type: TOKEN_TYPES, public value?: any, public start?: Position, public end?: Position) {
         if(start) {
             this.start = start.copy()
             this.end = start.copy()

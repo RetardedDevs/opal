@@ -6,10 +6,10 @@ const prompt = base();
 
 const repl = async () => {
     while (true) {
-        let input = prompt(`${chalk.blueBright('>')} `);
+        let input = prompt(`${chalk.yellowBright('>')} `);
         if(input === 'exit') break;
     
-        console.log(program('<STDIN>', input));
+        console.log(program('<STDIN>', input).toString());
     }
 }
 
